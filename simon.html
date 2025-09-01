@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="simon.css" rel="stylesheet" />
+    <title>Simon says game</title>
+</head>
+<body>
+    <h1> Simon says game </h1>
+    <h3>Press any key to start the game </h3>
+    <div class="btn-box">
+        <div class="line-one">
+            <div class="btn cement" type="button" id="cement"></div>
+            <div class="btn green" type="button" id="green"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn caramel" type="button" id="caramel"></div>
+            <div class="btn pink" type="button" id="pink"></div>
+        </div>
+    </div>
+
+    <div class="paraOne">
+        <h3> How to play </h3>
+        <p> Press any key on your keyboard to begin. The game will display a color sequence by flashing one of the buttons.
+             Click the buttons in the same order as they flashed. If you get the order right, you move to the next level.
+             Each level increases the length of the sequence. If you click the wrong button, the game ends. Your final score is the highest level you reached.
+            </p>
+ 
+    </div>
+
+    <div class="game-over-overlay" id="gameOverOverlay">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <p>Highest Score: <span id="highestScore">0</span></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+    
+    <script src="simon.js"></script>
+</body>
+</html>
